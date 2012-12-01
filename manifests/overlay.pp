@@ -2,10 +2,10 @@
 #
 # add and sync an overlay to layman
 #
-define layman::overlay ($require = [], $schedule = 'daily') {
+define layman::overlay ($require = [], $schedule = 'layman-daily') {
   include layman
 
-  $layman_dir = getvar('layman::layman_dir')
+  $layman_dir = $layman::layman_dir
 
   exec { "layman::overlay-add-repo-${name}":
     command => "/usr/bin/layman -a ${name}",
