@@ -13,7 +13,11 @@
 #
 #  layman {'layman':}
 #
-class layman ($ensure = present, $sync = false, $cfg_file = undef, $cfg_overlays = undef) {
+class layman (
+  $ensure       = present,
+  $sync         = false,
+  $cfg_file     = undef,
+  $cfg_overlays = undef) {
   include layman::params
 
   $cfg_file_real     = $cfg_file ? {
@@ -73,3 +77,4 @@ class layman ($ensure = present, $sync = false, $cfg_file = undef, $cfg_overlays
   }
 
 }
+
