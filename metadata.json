@@ -19,7 +19,7 @@
     "manifests/overlay.pp": "178c4c68c41913367490de2c18f76f97",
     "manifests/overlay/rabe_portage_overlay.pp": "70a5280840a2a6d02c2235b5ed173563",
     "manifests/params.pp": "e9b36814a35e7301b5c8c07b51a25641",
-    "manifests/repository.pp": "755681c510a1874987c782360e49a62c",
+    "manifests/repository.pp": "204461a9d8e3f16cb207392fd59e4266",
     "spec/classes/layman_spec.rb": "00a0cf7ea4705f5f4484a5b11ecb459d",
     "spec/defines/layman__overlay_spec.rb": "6364131bb80356a075e58274069e9ea0",
     "spec/defines/layman__repository_spec.rb": "5d1793ccc140a86cad45903bca5876ab",

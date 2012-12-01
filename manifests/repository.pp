@@ -25,7 +25,7 @@ define layman::repository ($ensure = present, $url = undef, $cfg_file = undef) {
   include layman::params
 
   $cfg_file_real = $cfg_file ? {
-    undef   => layman::params::cfg_file,
+    undef   => $layman::params::cfg_file,
     default => $cfg_file
   }
 
