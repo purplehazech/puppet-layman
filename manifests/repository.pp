@@ -7,6 +7,8 @@
 #   should this repolist get added to layman, present or absent
 # [*url*]
 #   replace name as the main url
+# [*cfg_file*]
+#   what config file to add the repos
 #
 # === Example Usage
 #
@@ -19,18 +21,25 @@
 #    url    => 'http://example.com/repositories.xml'
 #  }
 #
-define layman::repository ($ensure = present, $url = undef) {
-  if $url != undef {
-    $url_real = $url
-  } else {
-    $url_real = $name
+define layman::repository ($ensure = present, $url = undef, $cfg_file = undef) {
+  include layman::params
+
+  $cfg_file_real = $cfg_file ? {
+    undef   => layman::params::cfg_file,
+    default => $cfg_file
+  }
+
+  $url_real      = $url ? {
+    undef   => $name,
+    default => $url
   }
 
   file_line { "layman::repository-layman.cfg-${name}":
     ensure  => $ensure,
     line    => "            ${url_real}",
-    path    => $layman::params::laymap_cfg_file,
-    require => File[$layman::params::laymap_cfg_file]
+    path    => $layman::params::cfg_file,
+    require => File[$layman::params::cfg_file]
   }
 
 }
+
