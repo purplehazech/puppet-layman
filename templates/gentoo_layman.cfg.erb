@@ -1,0 +1,16 @@
+[MAIN]
+
+storage   : <%= @layman_dir %>
+
+cache     : %(storage)s/cache
+
+local_list: %(storage)s/overlays.xml
+
+make_conf : /var/lib/layman/make.conf
+
+overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
+<% cfg_overlays_real.each do |overlay| %><%= "            " + overlay %>
+<% end %>
+
+nocheck  : yes
+

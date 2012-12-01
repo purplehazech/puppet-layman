@@ -1,0 +1,16 @@
+== Module: layman
+
+{<img src="https://secure.travis-ci.org/purplehazech/puppet-layman.png?branch=master" alt="Build Status" />}[https://travis-ci.org/purplehazech/puppet-layman]
+
+Install and manage layman.
+
+* installs layman
+* adds some customer overlay repositories
+* uses puppet schedule to sync everything on a regular basis
+
+This whole thing ist rather specific to the first use case I
+encountered. Please bear with me while I refactor.
+
+=== Example Usage
+
+  include layman

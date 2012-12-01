@@ -1,0 +1,10 @@
+name 'purplehazech-layman'
+version '0.0.2'
+
+author 'Lucas S. Bickel'
+license 'AGPL'
+project_page 'https://github.com/purplehazech/puppet-layman/'
+source 'https://github.com/purplehazech/puppet-layman/tree'
+summary 'install layman and manage repos'
+description 'still rather specific to my use case, check back here later to see if i changed that'
+dependency 'puppetlabs/stdlib', '=3.1.0'
