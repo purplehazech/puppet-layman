@@ -1,0 +1,35 @@
+{
+  "name": "purplehazech-layman",
+  "author": "Lucas S. Bickel",
+  "description": "still rather specific to my use case, check back here later to see if i changed that",
+  "license": "GNU Affero General Public License",
+  "project_page": "https://github.com/purplehazech/puppet-layman/",
+  "source": "https://github.com/purplehazech/puppet-layman/tree",
+  "summary": "install layman and manage repos",
+  "version": "0.0.2",
+  "checksums": {
+    ".fixtures.yml": "242c9870b81b3d2c6b66f9a72de2079c",
+    "Gemfile": "ff908043e15d175714cea137564a41b4",
+    "Gemfile.lock": "bb3a5cc3185d7c182388c8290ff94ebf",
+    "LICENSE": "c0acfa7a8a03b718abee9135bc1a1c55",
+    "Modulefile": "667cc1bcb0c16aecdc4c52544a653517",
+    "README.rdoc": "377e840c81df070dfad091e4be8a1d08",
+    "Rakefile": "c78df27192f36724d67f1f941f36a175",
+    "manifests/init.pp": "208f7183740357a8c5cc33dddbfbe564",
+    "manifests/overlay.pp": "178c4c68c41913367490de2c18f76f97",
+    "manifests/overlay/rabe_portage_overlay.pp": "70a5280840a2a6d02c2235b5ed173563",
+    "manifests/params.pp": "e9b36814a35e7301b5c8c07b51a25641",
+    "manifests/repository.pp": "755681c510a1874987c782360e49a62c",
+    "spec/classes/layman_spec.rb": "00a0cf7ea4705f5f4484a5b11ecb459d",
+    "spec/defines/layman__overlay_spec.rb": "6364131bb80356a075e58274069e9ea0",
+    "spec/defines/layman__repository_spec.rb": "5d1793ccc140a86cad45903bca5876ab",
+    "spec/spec_helper.rb": "d7a62b403b7d46b784706f4e9823e1aa",
+    "templates/gentoo_layman.cfg.erb": "63c72e82c59ca60aba5108d810633822"
+  },
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": "\u003d3.1.0"
+    }
+  ]
+}
