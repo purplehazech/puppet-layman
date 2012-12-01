@@ -2,7 +2,7 @@ name 'purplehazech-layman'
 version '0.0.2'
 
 author 'Lucas S. Bickel'
-license 'AGPL'
+license 'GNU Affero General Public License'
 project_page 'https://github.com/purplehazech/puppet-layman/'
 source 'https://github.com/purplehazech/puppet-layman/tree'
 summary 'install layman and manage repos'
