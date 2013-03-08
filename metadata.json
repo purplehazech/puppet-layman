@@ -9,13 +9,13 @@
   "version": "0.0.2",
   "checksums": {
     ".fixtures.yml": "242c9870b81b3d2c6b66f9a72de2079c",
+    ".travis.yml": "f8052b7eec06516f5b3678d7e24bc695",
     "Gemfile": "ff908043e15d175714cea137564a41b4",
-    "Gemfile.lock": "bb3a5cc3185d7c182388c8290ff94ebf",
     "LICENSE": "c0acfa7a8a03b718abee9135bc1a1c55",
-    "Modulefile": "667cc1bcb0c16aecdc4c52544a653517",
+    "Modulefile": "9c6b855138e4aca2fdfe29aa7a456ae9",
     "README.rdoc": "377e840c81df070dfad091e4be8a1d08",
     "Rakefile": "c78df27192f36724d67f1f941f36a175",
-    "manifests/init.pp": "208f7183740357a8c5cc33dddbfbe564",
+    "manifests/init.pp": "5dcbef7a11f0a8b347fb77f5205e90ed",
     "manifests/overlay.pp": "178c4c68c41913367490de2c18f76f97",
     "manifests/overlay/rabe_portage_overlay.pp": "70a5280840a2a6d02c2235b5ed173563",
     "manifests/params.pp": "e9b36814a35e7301b5c8c07b51a25641",
@@ -29,7 +29,7 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": "\u003d3.1.0"
+      "version_requirement": "~3.1.0"
     }
   ]
 }
