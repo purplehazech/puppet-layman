@@ -56,7 +56,8 @@ class layman (
   }
 
   file { $layman_dir:
-    ensure => directory
+    ensure => directory,
+    mode   => '0555';
   }
 
   file { "${layman_dir}/make.conf":
